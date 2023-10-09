@@ -1,0 +1,21 @@
+.tabItem {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.currentItem {
+    border-left: 1px solid #d89853;
+    margin-left: -1px;
+    color: #a77744;
+}
+
+@media(width < 769px) {
+    .currentItem {
+        border-left: 0;
+        border-top: 1px solid #d89853;
+        margin-left: 0;
+        margin-bottom: 1px;
+        color: #a77744;
+    }
+}

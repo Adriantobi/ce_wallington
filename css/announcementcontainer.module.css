@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
+@media(width < 769px) {
+    .container {
+        flex-direction: column;
+        gap: 48px;
+    }
+}

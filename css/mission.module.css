@@ -1,0 +1,30 @@
+.mission {
+    background-color: #f1e7d9;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 26px;
+    padding: 212px 0;
+}
+
+.mission span {
+    padding: 0 180px;
+}
+
+@media (width < 480px) {
+    .mission {
+        padding: 120px 0px 70px;
+        font-size: 20px;
+        text-align: left;
+        align-items: right;
+    }
+
+    .mission span {
+        padding: 20px;
+    }
+}

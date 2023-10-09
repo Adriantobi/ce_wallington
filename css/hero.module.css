@@ -1,0 +1,155 @@
+.Hero {
+    background-color: #f7f4f0;
+    color: #000;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.gradient {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.top {
+    top: 0;
+    background: linear-gradient(#f7f4f0, #faf9f7, #ffffffc2, #ffffff32, transparent);
+}
+
+.bottom {
+    bottom: 0;
+    background: linear-gradient(transparent, #ffffff32, #ffffffc2, #faf9f7, #f7f4f0);
+}
+
+.bgImage {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    opacity: .25;
+    background-image:url('https://loveworldnews.org/upload/post/image/2020/03/D7pi765281_large.jpg');
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.heroContent {
+    padding: 0 95px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 104px;
+    gap: 30px;
+}
+
+.heroTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.churchName {
+    color: #a77744;
+    font-size: 20px;
+    width: 100%;
+    font-weight: 600;
+}
+
+.heroText {
+    font-size: 76px;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    gap: 30px;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 20px;
+}
+
+.ctaButtons span {    
+    font-size: 16px;
+    color: #000;
+}
+
+.heroBottom {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.announcementWrapper {
+    width: 100%;
+}
+
+.joinUs {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000 !important;
+    font-weight: 500 !important;
+    /* justify-self: flex-start; */
+    align-self: center;
+    width: 100%;
+}
+
+@media (width < 990px) {
+    .heroContent {
+        padding: 0 50px;
+    }
+
+    .heroTop {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .heroBottom {
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .joinUs {
+        align-self: normal;
+    }
+}
+
+@media (width < 769px) {
+    .heroBottom {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (width < 480px) {
+    .heroContent {
+        padding: 0 20px;
+    }
+
+    .heroText {
+        font-size: 38px;
+    }
+    
+    .heroTop span {
+        font-size: 16px;
+    }
+
+    .joinUs {
+        font-size: 16px !important;
+    }
+}

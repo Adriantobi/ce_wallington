@@ -1,0 +1,129 @@
+.main {
+    background-color: #f6f2ed;
+    padding: 0 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.titleContainer {
+    display: flex;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.pageTitle {
+    display: flex;
+    width: 50%;
+    color: #d89853;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pageIntro {
+    font-family: 'Merriweather', serif;
+    color: #1d1d1c;
+    font-size: 45px;
+    width: 50%;
+    font-weight: 400;
+}
+
+.bodyContainer {
+    display: flex;
+    width: 100%;
+}
+
+.imageWrapper {
+    width: 50%;
+}
+
+.pageImage {
+    display: flex;
+    max-width: 500px;
+    min-height: 500px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-right: 74px;
+}
+
+.pageLinks {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    color: #1d1d1c;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pageLinksWrapper {
+    width: 100%;
+}
+
+@media (width < 990px) {
+    .main {
+        padding: 0 50px;
+    }
+}
+
+@media (width < 769px) {
+    .titleContainer {
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 38px;
+    }
+
+    .pageTitle {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .pageIntro {    
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .pageImage {
+        min-height: 320px;
+        height: 320px;
+        overflow: hidden;
+        min-width: 100%;
+    }
+
+    .bodyContainer {
+        flex-direction: column;
+        position: relative
+    }
+
+    .imageWrapper {
+        width: 100%;
+    }
+
+    .pageLinks {
+        display: flex;
+        width: fill;
+        margin: -100px 0 0;
+    }
+
+    .pageLinksWrapper {
+        background-color: #f6f2ed;
+        width: fill;
+        padding: 20px;
+        padding-left: 0px;
+        max-width: 450px;
+        overflow: hidden;
+    }
+}
+
+@media (width < 480px) {
+    .main {
+        padding: 0 20px;
+    }
+
+    .pageLinks {
+        padding-right: 20px;
+    }
+
+    .pageLinksWrapper {
+        max-width: 380px;
+    }
+}

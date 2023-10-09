@@ -1,0 +1,26 @@
+.tabContent {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 22px 0 22px;
+}
+
+.empty {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+}
+
+.empty div {
+    font-style: italic;
+    text-align: center;
+    color: #928f8d;
+}
+
+@media (width < 769px) {
+    .tabContent {
+        padding: 0;
+    }
+}

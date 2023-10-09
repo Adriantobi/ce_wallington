@@ -1,0 +1,37 @@
+.linkWrapper {
+    display: flex;
+    cursor: pointer;
+    width: max-content;
+}
+
+.LinkItem {
+    box-shadow: 0 1px #d89853;
+    width: fit-content;
+    text-wrap: wrap;
+    white-space: pre-wrap;
+    transition: box-shadow .25s ease-in-out;
+}
+
+.LinkItem:hover {
+    color: #d89853;
+    box-shadow: 0 4px #d89853;
+}
+
+.blank {
+    color: #fff;
+    box-shadow: none !important;
+}
+
+.blank:hover {
+    color: #fff;
+    box-shadow: 0 4px #d89853 !important;
+}
+
+.underlined {
+    color: #fff !important;
+    box-shadow: 0 1px #d89853 !important;
+}
+
+.underlined:hover {
+    color: #d89853 !important;
+}
