@@ -1,0 +1,100 @@
+.ListItem {
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    border-bottom: 1px solid #d89853;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.news {
+    max-width: 100% !important;
+}
+
+.wrapperLink {
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.featuredItem {
+    background-color: #d89853;
+    border-bottom: 1px solid #000;
+}
+
+.itemWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 20px 12px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2px;
+    width: 100%;
+}
+
+.type {
+    display: flex;
+    font-size: 14px;
+    color: #a77744;
+    flex-wrap: nowrap;
+}
+
+.featuredType {
+    color: #000 !important;
+}
+
+.title {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-weight: 500;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0%;
+    transition: all .25s ease-in-out;
+}
+
+.colour {
+    display: flex;
+    background-color: #faf4ea;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: all .25s ease-in-out;
+}
+
+.featuredColour {
+    background-color: #d09251;
+}
+
+.darkColour {
+    background-color: #f3e9de;
+}
+
+.ListItem:hover .colour {
+    top: 0;
+}
+
+.ListItem:hover .arrow {
+    margin-right: -2%;
+}
+
+@media (width < 769px) {
+    .title {
+        font-size: 17px;
+    }
+}

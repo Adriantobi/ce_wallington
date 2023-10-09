@@ -1,0 +1,146 @@
+.FooterWrapper {
+    display: flex;
+    color: #000;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-color:  #f1e7d9;
+    padding: 0;
+    position: relative;
+    min-height: 530px;
+    height: 530px;
+}
+
+.footerCardWrapper {
+    padding: 0 95px;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        #f7f4f0 0%,
+        #f7f4f0 50%,
+        #292827 50%,
+        #292827 100%
+    );
+}
+
+.footerCtaCard {
+    background-color: #fff;
+    width: 100%;
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 36px;
+    flex-wrap: wrap;
+}
+
+.footerCtaLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #292827;
+    height: 100%;
+    width: 100%;
+    padding: 0 95px;
+    display: flex;
+}
+
+.footerInfo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.Logo {
+    margin-right: 8%;
+}
+
+.footerLinks {
+    display: flex;
+    width: 100%;
+    flex-direction: unset;
+}
+
+.footerLinksStack {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 300px;
+    max-width: 300px;
+    height: fit-content;
+    padding: 0 22px;
+    color: #fff;
+}
+
+@media (width < 990px) {
+    .footerCardWrapper {
+        padding: 0 50px;
+    }
+
+    .footerCtaLinks {
+        gap: 20px;
+    }
+
+    .footer {
+        padding: 0 50px;
+    }
+
+    .header {
+        font-size: 16px;
+    }
+}
+
+@media (width < 769px) {
+    .footerCardWrapper {     
+        height: 100%;
+        padding: 50px;
+    }
+
+    .footer {
+        height: fit-content;
+        font-size: 14px;
+    }
+
+    .footerInfo {
+        flex-direction: column;
+    }
+
+    .Logo {
+        margin-right: 0;
+        margin-bottom: 36px;
+    }
+
+    .footerLinks {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (width < 480px) {
+    .footerCardWrapper {
+        padding: 50px 20px;
+    }
+
+    .footerCtaLinks {
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .footerCtaCard {
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 0 20px;
+    }
+}

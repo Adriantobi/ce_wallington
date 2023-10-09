@@ -1,0 +1,109 @@
+.Wrapper {
+    background-color: rgba(20, 20, 20, .8);
+    display: block;
+    position: fixed;
+    z-index: 4;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: scroll;
+}
+
+.cardModal {
+    z-index: 4;
+    width: 85%;
+    max-width: 600px;
+    color: #1d1d1c;
+    background-color: #f7f4f0;
+    margin: 20px auto;
+    position: absolute;
+    top: 8%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px 36px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.type {
+    color: #a77744;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.content {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contentSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sectionHeader {
+    font-weight: 900;
+}
+
+.modalOverlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.links {
+    font-weight: 700;
+}
+
+@media (width < 769px) {
+    .cardModal {
+        padding: 24px 28px;
+    }
+
+    .type {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+}
+
+@media (width < 480px) {
+    .cardModal {
+        padding: 20px;
+    }
+}

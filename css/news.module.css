@@ -1,0 +1,35 @@
+.main {
+    background: #f7f4f0 !important;
+}
+
+.containerCentered {
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1d1c;
+    font-size: 20px;
+    max-width: 800px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.containerCentered p {
+    text-align: center;
+}
+
+@media (width < 769px) {
+    .containerCentered {
+        font-size: 18px;
+        justify-self: flex-start;
+        align-self: flex-start;
+    }
+
+    .containerCentered p {
+        text-align: start;
+    }
+}
+
+@media (width < 480px) {
+    .containerCentered {
+        font-size: 16px;
+    }
+}

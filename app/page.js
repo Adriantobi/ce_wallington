@@ -1,95 +1,66 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from '../css/home.module.css'
+import hero from '../css/hero.module.css'
+import mission from '../css/mission.module.css'
+
+import ButtonLink from '@/components/ButtonLink'
+import AnnouncementCard from '@/components/AnnouncementCard'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <Hero />
+      <Mission />
+    </main>
+  )
+}
+
+function Hero() {
+  return (
+    <div className={hero.Hero}>
+      <div className={hero.bgImage}>
+        <div className={`${hero.gradient} ${hero.top}`}></div>
+        {/* <Image
+          src='https://loveworldnews.org/upload/post/image/2020/03/D7pi765281_large.jpg'
+          width={0}
+          height={0}
+          sizes="100vw"
+          // layout='fill'
+          objectFit='contain'
+          alt='Hero Image'
+          style={{ width: '100%', height: 'auto' }}
+        /> */}
+        <div className={`${hero.gradient} ${hero.bottom}`}></div>
+      </div>
+
+      <div className={hero.heroContent}>
+        <div className={hero.heroTop}>
+          <span className={hero.churchName}>Christ Embassy Wallington</span>
+          <div className={hero.heroText}>
+            Taking God’s <br/> Divine Presence <br/> to Every Nation 
+            <div className={hero.cta}>
+              <div className={hero.ctaButtons}>
+                <ButtonLink name='I’m New' link='/connect' filled={true} />
+                <ButtonLink name='Resources' link='/resources' filled={false} />
+              </div>
+            </div>  
+          </div>
+        </div>
+
+        <div className={hero.heroBottom}>
+          <div className={hero.announcementWrapper}>
+            <AnnouncementCard />
+          </div>
+          <span className={hero.joinUs}>Join us this Sunday from 12:30PM - 2:00PM! <br/> If it’s your first time, <br/> let us know you’re coming!</span>
         </div>
       </div>
+    </div>
+  )
+}
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+function Mission() {
+  return (
+    <div className={mission.mission}>
+      <span>The mission of Christ Embassy is to raise generations of men and women who will come into their inheritance as we teach the word of God so that they will fulfil God’s dream.</span>
+    </div>
   )
 }
