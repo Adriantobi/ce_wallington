@@ -1,6 +1,5 @@
 import styles from '../css/announcementcontainer.module.css'
 import prisma from '@/lib/client'
-import { revalidatePath } from 'next/cache'
 import TabContent from './TabContent'
 import TabLinks from './TabLinks'
 
@@ -25,13 +24,11 @@ export default async function AnnouncementContainer() {
       })
       contents = posts
     }
-
-    revalidatePath('/news')
   }
 
   return (
     <>
-      {/* {fetchPosts('All')} */}
+      {fetchPosts('All')}
       <div className={styles.container}>
           <TabLinks categories={categories} fetchPosts={fetchPosts} />
           <TabContent contents={contents}/>
