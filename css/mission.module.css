@@ -1,30 +1,12 @@
-.mission {
-    background-color: #f1e7d9;
-    font-family: 'Montserrat', sans-serif;
-    color: #000;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    font-size: 26px;
-    padding: 212px 0;
-}
-
-.mission span {
-    padding: 0 180px;
+.callOutImage {
+    background: url('https://assets-global.website-files.com/64cacd2631caa034b8470fef/64cacd2631caa034b847110d_Screen%20Shot%202023-04-17%20at%202.05.28%20PM.webp') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 @media (width < 480px) {
-    .mission {
-        padding: 120px 0px 70px;
-        font-size: 20px;
-        text-align: left;
-        align-items: right;
-    }
-
-    .mission span {
-        padding: 20px;
+    .callOutImage {        
+        background-attachment: scroll
     }
 }

@@ -1,6 +1,6 @@
 import styles from '../css/home.module.css'
 import hero from '../css/hero.module.css'
-import mission from '../css/mission.module.css'
+import mission from '../css/missionsection.module.css'
 
 import ButtonLink from '@/components/ButtonLink'
 import AnnouncementCard from '@/components/AnnouncementCard'
