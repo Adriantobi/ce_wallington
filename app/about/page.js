@@ -24,7 +24,7 @@ export default function About() {
         <div className={general.pageLinks}>
             <div className={general.pageLinksWrapper}>
               <ListItem featured={false} title='What We Believe' subtitle='Our Doctrine' link='/about/what-we-believe' />
-              <ListItem featured={false} title='Mission and Values' subtitle='Spreading the gospel' link='/connect' />
+              <ListItem featured={false} title='Mission and Values' subtitle='Spreading the gospel' link='/about/missions-values' />
               <ListItem featured={false} title='Our Team' subtitle='Pastors and staff' link='/news' />
             </div>
         </div>
