@@ -7,7 +7,6 @@ export default function TabItem(props) {
   const router = useRouter()
 
   const handleClick = () => {
-    router.refresh()
     props.fetchPosts(props.name)
     props.setActive(props.name)
     router.refresh()
