@@ -36,7 +36,6 @@ export default async function AnnouncementCard() {
         </div>
 
         <div className={styles.newsListWrapper}>
-          {console.log(posts)}
           <ListItem featured={featuredPosts[0].featured} title={featuredPosts[0].title} category={featuredPosts[0].categoryName} news={true} post={featuredPosts[0]} />
 
           {posts.map((post) => (
