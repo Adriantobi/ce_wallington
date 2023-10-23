@@ -1,0 +1,84 @@
+.main {
+    background: #f7f4f0 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    display: flex;
+}
+
+.colLeft {
+    width: 50%;    
+    padding: 0 22px;
+}
+
+.contactInfoWrapper {
+    display: flex;
+    height: 100%;
+    padding-right: 8%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactInfoWrapper p {
+    font-size: 20px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contactInfo h2 {
+    font-size: 20px;
+}
+
+.contactInfo a {
+    font-size: 45px;
+    font-family: 'Merriweather', serif;
+}
+
+.colRight {
+    width: 50%;
+    padding: 0 22px;
+}
+
+.contactForm {
+    padding: 32px 36px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width < 769px) {
+    .content {
+        flex-direction: column;
+        gap: 68px;
+    }
+
+    .colLeft, .colRight {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contactInfoWrapper {
+        gap: 152px;
+    }
+
+    .contactInfoWrapper p {
+        font-size: 18px;
+    }
+
+    .contactInfo h2 {
+        font-size: 18px;
+    }
+
+    .contactInfo a {
+        font-size: 28px;
+    }
+
+    .contactInfoWrapper {
+        padding: 0;
+    }
+}
