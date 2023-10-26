@@ -4,9 +4,6 @@ const nextConfig = {
     images: {
         domains: [ "research.lifeway.com", "loveworldnews.org", "uploads-ssl.webflow.com", ]
     },
-    experimental: {
-        serverActions: true,
-    },
 }
 
 module.exports = nextConfig
