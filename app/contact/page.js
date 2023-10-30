@@ -6,7 +6,7 @@ import ButtonLink from '@/components/ButtonLink'
 
 export default function Contact() {
   return (
-    <main  className={`${nested.main} ${contact.main}`}>
+    <main className={`${nested.main} ${contact.main}`}>
         <div className={nested.bodyHeader}>
             <h1 className={nested.pageTitle}>Contact Us</h1>
             <ul className={nested.navList}>
