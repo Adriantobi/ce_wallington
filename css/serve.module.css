@@ -1,0 +1,12 @@
+.callOutImage {
+    background: url('https://assets-global.website-files.com/64cacd2631caa034b8470fef/64cacd2631caa034b847110f_Screen%20Shot%202023-04-17%20at%202.08.18%20PM.webp') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media (width < 480px) {
+    .callOutImage {        
+        background-attachment: scroll
+    }
+}
