@@ -40,29 +40,24 @@ export default function Footer() {
               <li>Wallington SM6 9NZ</li>
               <br />
               <li>075-8522-8412</li>
-              <li><LinkItem link='/connect' name='Contact Us' footer={true} underlined={true} /></li>
+              <li><LinkItem link='/contact' name='Contact Us' footer={true} underlined={true} /></li>
             </ul>
             <br />
             <ul className={styles.footerLinksStack}>
-              <li><LinkItem link='/news' name='What We Believe' footer={true} /></li>
-              <li><LinkItem link='/news' name='Missions & Values' footer={true} /></li>
-              <li><LinkItem link='/news' name='Our Team' footer={true} /></li>
-              <li><LinkItem link='/news' name='Missions' footer={true} /></li>        
+              <li><LinkItem link='/about/what-we-believe' name='What We Believe' footer={true} /></li>
+              <li><LinkItem link='/missions-values' name='Missions & Values' footer={true} /></li>
             </ul>
             <ul className={styles.footerLinksStack}>
-              <li><LinkItem link='/news' name='Start Here' footer={true} /></li>
-              <li><LinkItem link='/news' name='Ways to Serve' footer={true} /></li>
+              <li><LinkItem link='/connect/sundays-with-us' name='Start Here' footer={true} /></li>
+              <li><LinkItem link='/connect/ways-to-serve' name='Ways to Serve' footer={true} /></li>
               <li><LinkItem link='/news' name='Kids' footer={true} /></li>
               <li><LinkItem link='/news' name='Youth' footer={true} /></li> 
               <li><LinkItem link='/news' name='Connection Groups' footer={true} /></li>
               <li><LinkItem link='/news' name='The Salt Company' footer={true} /></li>
             </ul>
             <ul className={styles.footerLinksStack}>
-              <li><LinkItem link='/news' name='Sermons' footer={true} /></li>
+              <li><LinkItem link='https://pcdl.co/welcome' name='Sermons' footer={true} /></li>
               <li><LinkItem link='/news' name='News' footer={true} /></li>
-              <li><LinkItem link='/news' name='Events' footer={true} /></li>
-              <li><LinkItem link='/news' name='Blog' footer={true} /></li>
-              <li><LinkItem link='/news' name='Give Back' footer={true} /></li>
             </ul>
           </div>
           <div className={styles.footerSocials}></div>
