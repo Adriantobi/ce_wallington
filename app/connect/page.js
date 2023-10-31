@@ -24,7 +24,7 @@ export default function Connect() {
         <div className={general.pageLinks}>
             <div className={general.pageLinksWrapper}>
               <ListItem featured={false} title='Start Here' subtitle='What to expect, services and location' link='/connect/sundays-with-us' />
-              <ListItem featured={false} title='Ways to Serve' subtitle='Serving opportunities, expectations, contacts' link='/connnect/ways-to-serve' />
+              <ListItem featured={false} title='Ways to Serve' subtitle='Serving opportunities, expectations, contacts' link='/connect/ways-to-serve' />
               <ListItem featured={false} title='Prayer Requests' subtitle='We would love to pray for you' link='/about' />
               <ListItem featured={false} title='Contact us' subtitle='Let us chat' link='/contact' />
             </div>

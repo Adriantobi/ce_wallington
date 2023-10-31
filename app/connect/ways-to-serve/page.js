@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import LinkItem from '@/components/LinkItem'
 import nested from '../../../css/nested.module.css'
-import sundays from '../../../css/sundays.module.css'
+import serve from '../../../css/serve.module.css'
 
 export default function Serve() {
   return (
     <main  className={nested.main}>
         <div className={nested.bodyHeader}>
-            <h1 className={nested.pageTitle}>Sundays With Us</h1>
+            <h1 className={nested.pageTitle}>Ways to Serve</h1>
             <ul className={nested.navList}>
                 <li className={nested.navListItem}><LinkItem link='/' name='Home' /></li>
                 <li className={nested.navListItem}><LinkItem link='/connect' name='Let’s Connect' /></li>
@@ -21,7 +21,7 @@ export default function Serve() {
             </div>
             
             <div className={nested.callOutImageWrapper}>
-                <div className={`${sundays.callOutImage} ${nested.callOutImage}`}></div>
+                <div className={`${serve.callOutImage} ${nested.callOutImage}`}></div>
             </div>
         </div>
     </main>
