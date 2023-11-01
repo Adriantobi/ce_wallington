@@ -25,7 +25,7 @@ export default function Contact() {
 
                     <div className={contact.contactInfo}>
                         <h2>Give us a call directly</h2>
-                        <a href='#'>075-8522-8412</a>
+                        <a href='tel:07585228412'>075-8522-8412</a>
                     </div>
                 </div>
             </div>
