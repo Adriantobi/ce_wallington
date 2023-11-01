@@ -42,7 +42,7 @@ function Hero() {
                 <ButtonLink name='I’m New' link='/connect' filled={true} />
                 <ButtonLink name='Resources' link='/resources' filled={false} />
               </div>
-            </div>  
+            </div> 
           </div>
         </div>
 

@@ -2,7 +2,14 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: [ "research.lifeway.com", "loveworldnews.org", "uploads-ssl.webflow.com", ]
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'uploads-ssl.webflow.com',
+                port: '',
+                pathname: '/**',
+            },
+        ],
     },
 }
 
