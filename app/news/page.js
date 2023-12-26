@@ -1,9 +1,13 @@
 import LinkItem from '@/components/LinkItem'
+import prisma from '@/lib/client'
 import nested from '../../css/nested.module.css'
 import news from '../../css/news.module.css'
 import AnnouncementContainer from '@/components/AnnouncementContainer'
 
-export default function News() {
+export default async function News() {
+  const categories = await prisma.category.findMany()
+  const posts = await prisma.posts.findMany()
+
   return (
     <main className={`${nested.main} ${news.main}`}>
         <div className={nested.bodyHeader}>
@@ -18,7 +22,7 @@ export default function News() {
           <p>Our goal is to always keep our congregation and community informed of upcoming events, important announcements and ways that we can serve to impact the Kingdom. Check back often to see what is going on in the church and stay informed!</p>
         </div>
 
-        <AnnouncementContainer />
+        <AnnouncementContainer posts={posts} categories={categories} />
     </main>
   )
 }

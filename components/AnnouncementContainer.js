@@ -1,19 +1,16 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import styles from '../css/announcementcontainer.module.css'
-import prisma from '@/lib/client'
 import TabContent from './TabContent'
 import TabLinks from './TabLinks'
 
-let contents = await prisma.posts.findMany()
-
-export default async function AnnouncementContainer() {
-  const categories = await prisma.category.findMany()
-  const posts = await prisma.posts.findMany()
+export default function AnnouncementContainer( { posts, categories } ) {
+  const [contents, setContents] = useState(posts)
 
   const fetchPosts = async (title) => {
-    'use server'
-
     if (title === 'All') {
-      contents = posts
+      setContents(posts)
     }
   
     else {
@@ -23,13 +20,16 @@ export default async function AnnouncementContainer() {
           temp.push(posts[i]) 
         }
       }
-      contents = temp
+      setContents(temp)
     }
   }
 
+  useEffect(() => {
+    fetchPosts('All')
+  }, [])
+
   return (
     <>
-      {fetchPosts('All')}
       <div className={styles.container}>
           <TabLinks categories={categories} fetchPosts={fetchPosts} />
           <TabContent contents={contents}/>
