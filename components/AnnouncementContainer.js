@@ -7,22 +7,23 @@ let contents = await prisma.posts.findMany()
 
 export default async function AnnouncementContainer() {
   const categories = await prisma.category.findMany()
+  const posts = await prisma.posts.findMany()
 
   const fetchPosts = async (title) => {
     'use server'
 
     if (title === 'All') {
-      const posts = await prisma.posts.findMany()
       contents = posts
     }
   
     else {
-      const posts = await prisma.posts.findMany({
-        where: {
-          categoryName: title,
+      const temp = []
+      for (let i = 0; i < posts.length; i++) {
+        if (posts[i].categoryName === title) {
+          temp.push(posts[i]) 
         }
-      })
-      contents = posts
+      }
+      contents = temp
     }
   }
 
