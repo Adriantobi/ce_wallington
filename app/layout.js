@@ -1,5 +1,6 @@
 import '../css/globals.css'
 import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
 
 import NavMenu from '../components/NavMenu'
 import Banner from '../components/Banner'
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <Banner />
         <NavMenu />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
