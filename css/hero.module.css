@@ -136,7 +136,7 @@
 
 @media (width < 769px) {
     .heroBottom {
-        gap: 50%;
+        gap: 50px;
         flex-direction: column-reverse;
     }
 }
