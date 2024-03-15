@@ -12,9 +12,9 @@ export default function ListItem( props ) {
   if (props.link) {
     return (
       <>
-        <div className={`${styles.ListItem} ${ props.featured ? `${styles.featuredItem}` : ' ' } ${ props.news ? `${styles.news}` : ' ' }`} key={props.key} onClick={() => setOpen(true)}>
+        <div className={`${styles.ListItem} ${ props.featured ? `${styles.featuredItem}` : ' ' }`} key={props.key} onClick={() => setOpen(true)}>
           <Link href={props.link} className={styles.wrapperLink}>
-            <div className={styles.itemWrapper}>
+            <div className={`${styles.itemWrapper} ${ props.news ? `${styles.news}` : ' ' }`}>
                 <div className={styles.content}>
                     {props.news ? <div className={`${styles.type} ${ props.featured ? `${styles.featuredType}` : ' ' }`}>{props.featured ? `Featured ${props.category}` : `${props.category}`}</div> : null }
                     <h3 className={styles.title}>{props.title}</h3>

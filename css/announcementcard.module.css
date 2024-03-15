@@ -3,10 +3,10 @@
     /* min-width: 320px; */
     width: 100%;
     max-width: 450px;
-    min-height: 400px;
+    min-height: 250px;
     height: 495px;
     max-height: 500px;
-    max-height: 495px;
+    max-height: 400px;
     display: flex;
     /* position: absolute;
     top: -180px; */
