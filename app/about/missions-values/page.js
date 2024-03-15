@@ -16,7 +16,7 @@ export default function Mission() {
 
         <div className={nested.pageCallOut}>
             <div className={nested.cardIntro}>
-                <p>The mission of Cottage Grove Church has everything to do with the desire to see the Gospel spread by word and deed throughout the city of Des Moines. In our local church context, we will be committed to this mission until Christ returns.</p>
+                <p>The mission of Christ Embassy is to raise generations of men and women who will come into their inheritance to fulfill God&apos;s dream.</p>
             </div>
 
             <div className={nested.callOutImageWrapper}>

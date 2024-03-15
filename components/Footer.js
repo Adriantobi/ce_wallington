@@ -53,7 +53,6 @@ export default function Footer() {
               <li><LinkItem link='/news' name='Kids' footer={true} /></li>
               <li><LinkItem link='/news' name='Youth' footer={true} /></li> 
               <li><LinkItem link='/news' name='Connection Groups' footer={true} /></li>
-              <li><LinkItem link='/news' name='The Salt Company' footer={true} /></li>
             </ul>
             <ul className={styles.footerLinksStack}>
               <li><LinkItem link='https://pcdl.co/welcome' name='Sermons' footer={true} /></li>
