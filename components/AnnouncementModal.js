@@ -5,7 +5,7 @@ import LinkItem from './LinkItem'
 export default function AnnouncementModal({ post, close }) {
   return (
     <div className={styles.Wrapper}>
-        <div className={styles.cardModal}>
+        <div className={styles.cardModal} onClick={(e) => e.stopPropagation()}>
             <div className={styles.header}>
                 <div className={styles.details}>
                     <div className={styles.type}>{post.categoryName}</div>
